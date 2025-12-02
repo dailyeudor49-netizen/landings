@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Script from 'next/script';
 import { FB_CONFIG } from '@/app/config/facebook';
-import { generateEventId, trackPageView, trackLead } from '@/app/lib/facebook/pixel';
-import { getUserDataFromStorage, trackLeadCAPI } from '@/app/lib/facebook/capi';
+import { generateEventId, trackPageView, trackViewContent, trackPurchase } from '@/app/lib/facebook/pixel';
+import { getUserDataFromStorage, trackPurchaseCAPI } from '@/app/lib/facebook/capi';
 
 export default function FacebookPixel() {
   const pathname = usePathname();
@@ -18,27 +18,48 @@ export default function FacebookPixel() {
       if (typeof window !== 'undefined' && typeof win.fbq === 'function') {
         clearInterval(waitForFbq);
         
-        const eventId = generateEventId();
-        
+        const pageViewEventId = generateEventId();
+
         // Traccia PageView su tutte le pagine
-        trackPageView(eventId);
+        trackPageView(pageViewEventId);
         console.log('[FB Pixel] PageView tracked on:', pathname);
 
-        // Se siamo su una thank you page (/ty/*), traccia anche Lead
+        // Se siamo su una landing page (/fb-airwave-*), traccia ViewContent
+        if (pathname.startsWith('/fb-airwave')) {
+          const viewContentEventId = generateEventId();
+          console.log('[FB Pixel] Landing page detected, tracking ViewContent...');
+          trackViewContent({
+            content_name: 'Airwave Air Conditioner',
+            content_category: 'Electronics',
+            content_type: 'product',
+          }, viewContentEventId);
+          console.log('[FB Pixel] ViewContent tracked');
+        }
+
+        // Se siamo su una thank you page (/ty/*), traccia Purchase
         if (pathname.startsWith('/ty')) {
-          console.log('[FB Pixel] Thank you page detected, tracking Lead...');
-          
+          const purchaseEventId = generateEventId();
+          console.log('[FB Pixel] Thank you page detected, tracking Purchase...');
+
           const userData = getUserDataFromStorage();
-          
-          // Traccia Lead via Pixel (client-side)
-          trackLead(undefined, eventId);
-          
-          // Traccia Lead via CAPI (server-side via N8N)
-          trackLeadCAPI(eventId, userData).then((success) => {
+
+          const purchaseData = {
+            content_name: 'Airwave Air Conditioner',
+            content_category: 'Electronics',
+            content_type: 'product',
+            currency: 'EUR',
+            value: 89.00,
+          };
+
+          // Traccia Purchase via Pixel (client-side)
+          trackPurchase(purchaseData, purchaseEventId);
+
+          // Traccia Purchase via CAPI (server-side via N8N)
+          trackPurchaseCAPI(purchaseEventId, userData, purchaseData).then((success) => {
             if (success) {
-              console.log('[FB CAPI] Lead event sent successfully');
+              console.log('[FB CAPI] Purchase event sent successfully');
             } else {
-              console.error('[FB CAPI] Failed to send Lead event');
+              console.error('[FB CAPI] Failed to send Purchase event');
             }
           });
         }
