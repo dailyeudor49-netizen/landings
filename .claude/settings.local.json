@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cat:*)"
+      "Bash(*)",
+      "Read(*)",
+      "Write(*)",
+      "Edit(*)",
+      "Glob(*)",
+      "Grep(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "Task(*)",
+      "TodoWrite(*)",
+      "NotebookEdit(*)"
     ],
     "deny": [],
     "ask": []
