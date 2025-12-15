@@ -193,7 +193,7 @@ export default function AirWaveSmartLanding() {
             Basta bollette del gas alle stelle!
           </p>
           <p className="text-lg md:text-xl text-gray-700 bg-yellow-100 border-2 border-yellow-400 rounded-xl p-4 inline-block">
-            🔥 <strong>Butta via ventilatori, vecchi termosifoni e stufe</strong> grazie a questo innovativo <strong>condizionatore 3 in 1</strong>.
+            <strong>Butta via ventilatori, vecchi termosifoni e stufe</strong> grazie a questo innovativo <strong>condizionatore 3 in 1</strong>.
           </p>
         </div>
       </section>
