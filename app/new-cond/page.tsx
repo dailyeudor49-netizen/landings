@@ -636,8 +636,8 @@ export default function AirWaveSmartLanding() {
           <p className="text-lg text-gray-600 text-center mb-8">
             Cosa fa Air Wave Smart che gli altri non fanno?
           </p>
-          <div className="mb-8 max-[385px]:overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden text-sm md:text-base max-[385px]:min-w-[500px]">
+          <div className="mb-8 overflow-x-auto">
+            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden text-sm md:text-base min-w-[550px]">
               <thead className="bg-slate-800 text-white">
                 <tr>
                   <th className="px-2 md:px-4 py-2 md:py-3 text-left w-[25%]"></th>
