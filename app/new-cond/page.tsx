@@ -186,7 +186,7 @@ export default function AirWaveSmartLanding() {
       {/* Hero Title Section */}
       <section className="bg-white pt-6 pb-4 md:py-8 px-4 border-b">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-2xl md:text-4xl font-black text-[#0f1c3f] mb-4 leading-tight">
+          <h1 className="text-2xl md:text-4xl font-black text-[#0f1c3f] mb-4 leading-tight tracking-wide">
             RISCALDA O RAFFREDDA LA CASA SENZA GAS E SENZA INSTALLAZIONE
           </h1>
           <p className="text-xl md:text-2xl font-bold text-red-600 mb-4">
@@ -351,7 +351,7 @@ export default function AirWaveSmartLanding() {
       {/* SCOPRI COME CAMBIERÀ LA TUA VITA - 6 Box */}
       <section className="py-12 bg-slate-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-10 text-[#0f1c3f]">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-10 text-[#0f1c3f] tracking-wide">
             SCOPRI COME CAMBIERÀ LA TUA VITA<br />CON AIR WAVE SMART
           </h2>
 
@@ -365,7 +365,7 @@ export default function AirWaveSmartLanding() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-black text-[#0f1c3f] mb-2">CALDO IMMEDIATO</h3>
+                <h3 className="text-xl font-black text-[#0f1c3f] mb-2 tracking-wide">CALDO IMMEDIATO</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   In soli <strong>5 minuti</strong> la tua stanza passa da gelida a calda e accogliente.
                   Con 12.000 BTU di potenza riscalda ambienti <strong>fino a 60m²</strong> senza problemi.
@@ -382,7 +382,7 @@ export default function AirWaveSmartLanding() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-black text-[#0f1c3f] mb-2">ADDIO BOLLETTE GAS</h3>
+                <h3 className="text-xl font-black text-[#0f1c3f] mb-2 tracking-wide">ADDIO BOLLETTE GAS</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   La pompa di calore <strong>classe A+++</strong> consuma pochissimo: meno di <strong>€0,50 al giorno</strong>.
                   Risparmia fino al <strong>60%</strong> rispetto al riscaldamento tradizionale.
@@ -399,7 +399,7 @@ export default function AirWaveSmartLanding() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-black text-[#0f1c3f] mb-2">ZERO INSTALLAZIONE</h3>
+                <h3 className="text-xl font-black text-[#0f1c3f] mb-2 tracking-wide">ZERO INSTALLAZIONE</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   <strong>Appendilo a parete o appoggialo dove vuoi</strong>. Niente tecnici, niente permessi.
                   Lo attacchi alla presa e <strong>funziona subito</strong>. Facilissimo.
@@ -416,7 +416,7 @@ export default function AirWaveSmartLanding() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-black text-[#0f1c3f] mb-2">SILENZIO ASSOLUTO</h3>
+                <h3 className="text-xl font-black text-[#0f1c3f] mb-2 tracking-wide">SILENZIO ASSOLUTO</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   Solo <strong>35 decibel</strong>: più silenzioso di un frigorifero. Puoi <strong>dormirci accanto</strong>.
                   Perfetto per la camera da letto o lo studio.
@@ -433,7 +433,7 @@ export default function AirWaveSmartLanding() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-black text-[#0f1c3f] mb-2">ESTATE E INVERNO</h3>
+                <h3 className="text-xl font-black text-[#0f1c3f] mb-2 tracking-wide">ESTATE E INVERNO</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   <strong>3 prodotti in 1</strong>: riscalda d'inverno, rinfresca d'estate, deumidifica tutto l'anno.
                   Un solo acquisto per <strong>tutto l'anno</strong>.
@@ -450,7 +450,7 @@ export default function AirWaveSmartLanding() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-black text-[#0f1c3f] mb-2">NIENTE UNITÀ ESTERNA</h3>
+                <h3 className="text-xl font-black text-[#0f1c3f] mb-2 tracking-wide">NIENTE UNITÀ ESTERNA</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   Il condominio ti ha detto <strong>NO</strong>? Con Air Wave Smart il problema non esiste.
                   È tutto in un unico blocco compatto. <strong>Nessun permesso richiesto</strong>.
@@ -464,7 +464,7 @@ export default function AirWaveSmartLanding() {
       {/* Sezione Installazione Facile */}
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-4 text-[#0f1c3f]">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-4 text-[#0f1c3f] tracking-wide">
             PRONTO IN 2 MINUTI
           </h2>
           <p className="text-lg text-gray-600 text-center mb-10">
@@ -478,7 +478,7 @@ export default function AirWaveSmartLanding() {
                 <div className="inline-block bg-sky-500 text-white text-sm font-bold px-4 py-1 rounded-full mb-3">
                   OPZIONE 1
                 </div>
-                <h3 className="text-2xl font-black text-[#0f1c3f]">APPOGGIALO DOVE VUOI</h3>
+                <h3 className="text-2xl font-black text-[#0f1c3f] tracking-wide">APPOGGIALO DOVE VUOI</h3>
               </div>
               <div className="aspect-video bg-white rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="/images/condizionatore/installazione.webp" alt="Appoggiato a terra" className="w-full h-full object-cover" />
@@ -513,7 +513,7 @@ export default function AirWaveSmartLanding() {
                 <div className="inline-block bg-amber-500 text-white text-sm font-bold px-4 py-1 rounded-full mb-3">
                   OPZIONE 2
                 </div>
-                <h3 className="text-2xl font-black text-[#0f1c3f]">FISSALO A PARETE</h3>
+                <h3 className="text-2xl font-black text-[#0f1c3f] tracking-wide">FISSALO A PARETE</h3>
               </div>
               <div className="aspect-video bg-white rounded-xl mb-4 flex items-center justify-center overflow-hidden">
                 <img src="/images/condizionatore/silenzioso.webp" alt="Fissato a parete" className="w-full h-full object-cover" />
@@ -630,7 +630,7 @@ export default function AirWaveSmartLanding() {
       {/* Comparison Table */}
       <section className="py-12 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-2 text-[#0f1c3f]">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-2 text-[#0f1c3f] tracking-wide">
             CONFRONTA TU STESSO
           </h2>
           <p className="text-lg text-gray-600 text-center mb-8">
@@ -689,7 +689,7 @@ export default function AirWaveSmartLanding() {
       {/* Reviews */}
       <section className="py-12 bg-[#035aa6]">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center text-white mb-2">
+          <h2 className="text-2xl md:text-3xl font-black text-center text-white mb-2 tracking-wide">
             COSA DICONO I CLIENTI
           </h2>
           <p className="text-center text-white/80 mb-8">2.847 recensioni verificate</p>
@@ -745,7 +745,7 @@ export default function AirWaveSmartLanding() {
       {/* How to Order */}
       <section className="py-10 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-[#0f1c3f] mb-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-black text-[#0f1c3f] mb-6 text-center tracking-wide">
             COME ORDINARE
           </h2>
           <div className="flex flex-row items-start justify-center gap-2 md:gap-6">
@@ -770,7 +770,7 @@ export default function AirWaveSmartLanding() {
       {/* Modulo d'Ordine */}
       <section id="order-form-section" className="bg-[#035aa6] py-12 pb-8">
         <div className="max-w-xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-white mb-2 text-center">
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-2 text-center tracking-wide">
             MODULO D'ORDINE
           </h2>
           <p className="text-white/80 mb-6 text-center">
@@ -877,7 +877,7 @@ export default function AirWaveSmartLanding() {
       {/* FAQ */}
       <section className="bg-[#035aa6] py-8 pb-32">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-8 text-white">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-8 text-white tracking-wide">
             DOMANDE FREQUENTI
           </h2>
           <div className="space-y-3">
