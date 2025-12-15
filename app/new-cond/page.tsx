@@ -630,7 +630,7 @@ export default function AirWaveSmartLanding() {
       {/* Comparison Table */}
       <section className="py-12 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-2 text-[#0f1c3f] tracking-wide">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-2 text-[#0f1c3f] tracking-tight">
             CONFRONTA TU STESSO
           </h2>
           <p className="text-lg text-gray-600 text-center mb-8">
