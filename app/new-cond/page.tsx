@@ -186,7 +186,7 @@ export default function AirWaveSmartLanding() {
       {/* Hero Title Section */}
       <section className="bg-white pt-6 pb-4 md:py-8 px-4 border-b">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-2xl md:text-4xl font-black text-[#0f1c3f] mb-4 leading-tight tracking-wide">
+          <h1 className="text-2xl md:text-4xl font-black text-[#0f1c3f] mb-4 leading-tight tracking-tight">
             RISCALDA O RAFFREDDA LA CASA SENZA GAS E SENZA INSTALLAZIONE
           </h1>
           <p className="text-xl md:text-2xl font-bold text-red-600 mb-4">
@@ -351,7 +351,7 @@ export default function AirWaveSmartLanding() {
       {/* SCOPRI COME CAMBIERÀ LA TUA VITA - 6 Box */}
       <section className="py-12 bg-slate-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-black text-center mb-10 text-[#0f1c3f] tracking-wide">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-10 text-[#0f1c3f] tracking-tight">
             SCOPRI COME CAMBIERÀ LA TUA VITA<br />CON AIR WAVE SMART
           </h2>
 
