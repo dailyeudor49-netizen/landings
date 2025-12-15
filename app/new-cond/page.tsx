@@ -167,13 +167,13 @@ export default function AirWaveSmartLanding() {
     <div className="min-h-screen bg-white overflow-x-hidden font-sans leading-relaxed">
       {/* Fixed CTA Button */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t-2 border-green-500 shadow-2xl">
-        <div className="max-w-md mx-auto p-4">
+        <div className="max-w-md mx-auto px-4 py-2">
           <button
             onClick={openOrderPopup}
-            className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-bold text-lg hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
+            className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-bold text-base sm:text-lg hover:from-green-700 hover:to-green-800 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2 cursor-pointer whitespace-nowrap"
           >
             <span>ORDINA ORA - €199</span>
-            <span className="text-sm bg-white/20 px-2 py-1 rounded">💳 Paga alla consegna</span>
+            <span className="text-xs sm:text-sm bg-white/20 px-2 py-1 rounded">💳 Paga alla consegna</span>
           </button>
         </div>
       </div>
@@ -640,32 +640,32 @@ export default function AirWaveSmartLanding() {
             Cosa fa Air Wave Smart che gli altri non fanno?
           </p>
           <div className="mb-8 overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden text-sm md:text-base min-w-[550px]">
+            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden text-xs md:text-base min-w-[480px]">
               <thead className="bg-slate-800 text-white">
                 <tr>
-                  <th className="px-2 md:px-4 py-2 md:py-3 text-left w-[25%]"></th>
-                  <th className="px-2 md:px-4 py-2 md:py-3 text-center bg-green-600 w-[35%]">
-                    <div className="font-bold text-sm md:text-base">Air Wave Smart</div>
+                  <th className="px-1.5 md:px-4 py-1.5 md:py-3 text-left w-[22%]"></th>
+                  <th className="px-1.5 md:px-4 py-1.5 md:py-3 text-center bg-green-600 w-[32%]">
+                    <div className="font-bold text-xs md:text-base">Air Wave Smart</div>
                   </th>
-                  <th className="px-1 md:px-3 py-2 md:py-3 text-center bg-gray-500 w-[20%]">
-                    <div className="font-bold text-xs md:text-sm">Condizionatore Classico</div>
+                  <th className="px-1 md:px-3 py-1.5 md:py-3 text-center bg-gray-500 w-[23%]">
+                    <div className="font-bold text-[10px] md:text-sm leading-tight">Condizionatore Classico</div>
                   </th>
-                  <th className="px-1 md:px-3 py-2 md:py-3 text-center bg-gray-500 w-[20%]">
-                    <div className="font-bold text-xs md:text-sm">Termosifone</div>
+                  <th className="px-1 md:px-3 py-1.5 md:py-3 text-center bg-gray-500 w-[23%]">
+                    <div className="font-bold text-[10px] md:text-sm">Termosifone</div>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonData.map((row, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-slate-50' : 'bg-white'}>
-                    <td className="px-2 md:px-4 py-2 md:py-3 font-semibold text-slate-900 text-sm md:text-base">{row.feature}</td>
-                    <td className={`px-1 md:px-4 py-2 md:py-3 text-center font-bold text-sm md:text-base ${
+                    <td className="px-1.5 md:px-4 py-1.5 md:py-3 font-semibold text-slate-900 text-xs md:text-base">{row.feature}</td>
+                    <td className={`px-1 md:px-4 py-1.5 md:py-3 text-center font-bold text-xs md:text-base ${
                       row.feature === 'Costo totale' ? 'text-green-700 bg-green-50' : 'text-teal-700 bg-teal-50'
                     }`}>
                       {row.airwave}
                     </td>
-                    <td className="px-1 md:px-4 py-2 md:py-3 text-center text-gray-500 text-sm md:text-base">{row.comp1}</td>
-                    <td className="px-1 md:px-4 py-2 md:py-3 text-center text-gray-500 text-sm md:text-base">{row.comp2}</td>
+                    <td className="px-1 md:px-4 py-1.5 md:py-3 text-center text-gray-500 text-xs md:text-base">{row.comp1}</td>
+                    <td className="px-1 md:px-4 py-1.5 md:py-3 text-center text-gray-500 text-xs md:text-base">{row.comp2}</td>
                   </tr>
                 ))}
               </tbody>
@@ -860,13 +860,13 @@ export default function AirWaveSmartLanding() {
             <button
               onClick={handleSubmit}
               disabled={isSubmitting}
-              className={`w-full py-4 px-4 rounded-xl font-bold text-lg transition duration-300 ${
+              className={`w-full py-4 px-4 rounded-xl font-bold text-lg transition duration-300 flex items-center justify-center gap-2 ${
                 isSubmitting
                   ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-                  : 'bg-green-500 hover:bg-green-600 text-white cursor-pointer shadow-lg'
+                  : 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white cursor-pointer shadow-lg'
               }`}
             >
-              {isSubmitting ? 'INVIO IN CORSO...' : 'CONFERMA ORDINE'}
+              {isSubmitting ? 'INVIO IN CORSO...' : <><span>CONFERMA ORDINE</span><ChevronRight className="w-5 h-5" /></>}
             </button>
 
             {/* Data Protection */}
