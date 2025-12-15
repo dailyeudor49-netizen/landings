@@ -187,7 +187,7 @@ export default function AirWaveSmartLanding() {
       <section className="bg-white pt-6 pb-4 md:py-8 px-4 border-b">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-4xl font-black text-[#0f1c3f] mb-4 leading-tight tracking-tight">
-            RISCALDA O RAFFREDDA LA CASA SENZA GAS E SENZA INSTALLAZIONE
+            <span className="text-orange-500">RISCALDA</span> O <span className="text-orange-500">RAFFREDDA</span> LA CASA SENZA GAS E SENZA INSTALLAZIONE
           </h1>
           <p className="text-xl md:text-2xl font-bold text-red-600 mb-4">
             Basta bollette del gas alle stelle!
@@ -283,18 +283,21 @@ export default function AirWaveSmartLanding() {
               <h2 className="text-xl font-bold text-[#0f1c3f] text-center mb-2">
                 Air Wave Smart - Condizionatore 3 in 1: Riscalda, Raffredda e Deumidifica
               </h2>
-              <div className="flex items-center justify-center space-x-2 mb-4">
+              <div
+                className="flex items-center justify-center space-x-2 mb-4 cursor-pointer hover:opacity-80 transition-opacity"
+                onClick={() => document.getElementById('reviews-section')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
                 </div>
-                <span className="text-gray-500 text-sm">(2.847 recensioni)</span>
+                <span className="text-gray-500 text-sm underline">(2.847 recensioni)</span>
               </div>
 
               <div className="flex items-center justify-center space-x-3 mb-4">
-                <span className="text-gray-400 line-through text-xl">€499</span>
-                <span className="text-5xl font-black text-green-600">€199</span>
+                <span className="text-gray-400 line-through text-xl" style={{ fontFamily: 'var(--font-montserrat)' }}>€499</span>
+                <span className="text-5xl font-black text-green-700" style={{ fontFamily: 'var(--font-montserrat)' }}>€199</span>
               </div>
 
               {/* Kit Incluso */}
@@ -687,7 +690,7 @@ export default function AirWaveSmartLanding() {
       </section>
 
       {/* Reviews */}
-      <section className="py-12 bg-[#035aa6]">
+      <section id="reviews-section" className="py-12 bg-[#035aa6]">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-black text-center text-white mb-2 tracking-wide">
             COSA DICONO I CLIENTI
@@ -788,8 +791,8 @@ export default function AirWaveSmartLanding() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className="text-gray-400 line-through text-sm block">€499</span>
-                  <span className="text-2xl font-black text-green-600">€199</span>
+                  <span className="text-gray-400 line-through text-sm block" style={{ fontFamily: 'var(--font-montserrat)' }}>€499</span>
+                  <span className="text-2xl font-black text-green-700" style={{ fontFamily: 'var(--font-montserrat)' }}>€199</span>
                 </div>
               </div>
             </div>
