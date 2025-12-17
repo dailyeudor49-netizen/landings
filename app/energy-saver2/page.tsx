@@ -364,77 +364,59 @@ export default function EnergySaverLanding() {
         📦 <strong>Spedizione Express Assicurata</strong> - se il pacco è danneggiato, lo sostituiamo senza farti sborsare un euro.
       </div>
 
-      {/* SEZIONE SHOCK: IL PROBLEMA CHE NON TI DICONO */}
-      <section className="py-8 md:py-12 bg-red-50">
+      {/* SEZIONE SPIEGONE: PERCHÉ LE BOLLETTE SONO COSÌ ALTE */}
+      <section className="py-8 md:py-12 bg-slate-50">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-black text-center mb-2 text-red-700 tracking-tight">
-            DOVE FINISCONO I TUOI SOLDI?
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-6 md:mb-10 text-[#0f1c3f] tracking-tight">
+            PERCHÉ LE TUE BOLLETTE SONO FUORI CONTROLLO
           </h2>
-          <p className="text-lg text-gray-700 text-center mb-4 md:mb-8">
-            <strong className="text-red-900">Il 50% della tua bolletta sono sprechi</strong>. Non è un complotto, sono <strong>impianti vecchi</strong>; i fornitori di energia <strong>non hanno nessun vantaggio</strong> nel darti una soluzione.
-          </p>
 
-          {/* Schema Visivo Sprechi */}
-          <div className="bg-white rounded-2xl p-4 md:p-8 shadow-xl border-2 border-red-200 mb-4 md:mb-8">
-            <h3 className="text-xl md:text-2xl font-black text-center text-[#0f1c3f] mb-4 md:mb-6">
-              ECCO DOVE FINISCONO I TUOI SOLDI
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 items-center">
-              {/* Senza Energy Saver */}
-              <div className="bg-red-100 rounded-xl p-3 md:p-5 text-center border-2 border-red-300">
-                <div className="text-5xl md:text-6xl font-black text-red-600 mb-1 md:mb-2" style={{ fontFamily: 'var(--font-montserrat)' }}>€2</div>
-                <p className="text-red-800 font-bold text-base md:text-lg mb-1 md:mb-2">PAGHI</p>
-                <div className="space-y-1 text-sm text-red-700">
-                  <p>€1 = Energia usata</p>
-                  <p className="font-bold text-red-600">€1 = SPRECHI DI TENSIONE</p>
-                </div>
-                <div className="mt-2 md:mt-3 bg-red-200 rounded-lg p-2">
-                  <p className="text-xs font-bold text-red-800">SENZA ENERGY SAVER</p>
-                </div>
+          {/* Step 1 - Il Problema */}
+          <div className="bg-white rounded-2xl p-5 md:p-8 shadow-lg border-l-4 border-red-500 mb-4 md:mb-6">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-xl md:text-2xl font-black">1</span>
               </div>
-
-              {/* Freccia Mobile (verso il basso) */}
-              <div className="flex md:hidden flex-col items-center justify-center py-1">
-                <p className="text-green-700 font-bold text-sm mb-1">TRASFORMA</p>
-                <div className="text-4xl font-black text-green-600">↓</div>
+              <div>
+                <h3 className="text-xl md:text-2xl font-black text-red-600 mb-3">L'INCUBO DELLE BOLLETTE</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Ogni bimestre è peggio del precedente. Apri la bolletta e trovi <strong>voci incomprensibili</strong>: tariffe, fasce orarie, oneri di sistema. Impossibile capire quanto stai spendendo davvero. E così vivi nell'ansia: ogni volta che accendi condizionatore, stufa o forno ti chiedi <strong>"quanto mi costerà?"</strong>. Non hai mai il controllo dei tuoi consumi.
+                </p>
               </div>
-
-              {/* Freccia Desktop (verso destra) */}
-              <div className="hidden md:flex flex-col items-center justify-center">
-                <p className="text-green-700 font-bold text-sm mb-2">TRASFORMA</p>
-                <div className="text-4xl font-black text-green-600">→</div>
-              </div>
-
-              {/* Con Energy Saver */}
-              <div className="bg-green-100 rounded-xl p-3 md:p-5 text-center border-2 border-green-400">
-                <div className="text-5xl md:text-6xl font-black text-green-600 mb-1 md:mb-2" style={{ fontFamily: 'var(--font-montserrat)' }}>€1</div>
-                <p className="text-green-800 font-bold text-base md:text-lg mb-1 md:mb-2">PAGHI</p>
-                <div className="space-y-1 text-sm text-green-700">
-                  <p>€1 = Energia usata</p>
-                  <p className="font-bold text-green-600">€0 = ZERO SPRECHI</p>
-                </div>
-                <div className="mt-2 md:mt-3 bg-green-200 rounded-lg p-2">
-                  <p className="text-xs font-bold text-green-800">CON ENERGY SAVER PRO</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-4 md:mt-8 text-center">
-              <p className="text-xl md:text-2xl font-black text-[#0f1c3f]">
-                Per ogni <span className="text-green-600">€1 di corrente</span> che usi, ne stai <span className="text-red-600">buttando un altro</span> in sprechi.
-              </p>
             </div>
           </div>
 
-          {/* Box Impianto Vecchio */}
-          <div className="bg-amber-50 border-2 border-amber-400 rounded-xl p-5">
+          {/* Step 2 - Il Problema Nascosto */}
+          <div className="bg-white rounded-2xl p-5 md:p-8 shadow-lg border-l-4 border-amber-500 mb-4 md:mb-6">
             <div className="flex items-start gap-4">
-              <AlertTriangle className="w-7 h-7 text-amber-600 flex-shrink-0" />
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-xl md:text-2xl font-black">2</span>
+              </div>
               <div>
-                <p className="text-amber-900">
-                  <strong>Il tuo impianto è vecchio</strong> e non gestisce i consumi moderni. Rifare l'impianto costa <strong>€3.000 - €8.000</strong>. Energy Saver Pro risolve il problema con <strong>€49</strong>.
+                <h3 className="text-xl md:text-2xl font-black text-amber-600 mb-3">LA VERITÀ CHE NESSUNO TI DICE</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Il vero colpevole non sei tu: è il <strong>tuo impianto elettrico</strong>. Quando la stabilizzazione elettrica non è ottimale, butti via soldi ogni giorno. Soprattutto se hai un impianto di <strong>20-30 anni</strong>: non è progettato per i consumi moderni. Risultato? Sprechi enormi, corrente instabile, contatore che schizza. La soluzione tradizionale? Rifare l'impianto: <strong>migliaia di euro</strong>, operai in casa per settimane.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 3 - La Soluzione */}
+          <div className="bg-white rounded-2xl p-5 md:p-8 shadow-lg border-l-4 border-green-500">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-white text-xl md:text-2xl font-black">3</span>
+              </div>
+              <div>
+                <h3 className="text-xl md:text-2xl font-black text-green-600 mb-3">LA SOLUZIONE: ENERGY SAVER PRO</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <strong>Tecnologia americana</strong> che stabilizza la corrente elettrica, elimina i picchi di tensione e riduce le dispersioni. In parole semplici: <strong>ogni watt che paghi viene effettivamente usato</strong>, invece di essere sprecato.
+                </p>
+                <div className="bg-green-50 rounded-xl p-4 border-2 border-green-300">
+                  <p className="text-green-800 font-bold text-center text-lg md:text-xl">
+                    Risparmio fino al <span className="text-green-600">40%</span> sulla bolletta. Senza rinunce, senza cambiare abitudini, senza ristrutturazioni.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
